@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.jkolesnikov.tetris.gui.MenuController">
+    <children>
+        <Label text="TETRIS">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameTextField" alignment="CENTER" maxWidth="-Infinity" minWidth="200.0" onKeyReleased="#textFeld" promptText="Gib deinen Namen ein">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></TextField>
+      <HBox alignment="CENTER">
+         <children>
+              <Button fx:id="spielenButton" disable="true" minWidth="100.0" mnemonicParsing="false" onAction="#oeffnenTetrisSzeneMitSpieler" text="Spielen">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+              </Button>
+            <Button fx:id="ladenButton" disable="true" layoutX="260.0" layoutY="10.0" minWidth="100.0" mnemonicParsing="false" onAction="#oeffnenSpielerLadenSzene" text="Laden">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+    </children>
+</VBox>

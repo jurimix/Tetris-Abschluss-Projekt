@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderpane" minHeight="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.jkolesnikov.tetris.gui.TetrisController">
+    <center>
+        <GridPane fx:id="spielfeld" alignment="CENTER" hgap="1" vgap="1" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+                <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+            </columnConstraints>
+            <rowConstraints>
+            <RowConstraints />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" />
+            </rowConstraints>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="10.0" right="10.0" />
+         </padding>
+        </GridPane>
+    </center>
+   <left>
+      <Pane prefWidth="110.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="15.0" layoutY="103.0" text="Game Over --&gt;" />
+         </children></Pane>
+   </left>
+   <right>
+       <Pane prefWidth="110.0" BorderPane.alignment="CENTER">
+           <Label fx:id="spielzeitLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="14.0" minWidth="100.0" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+              <font>
+                  <Font size="18.0" />
+              </font>
+           </Label>
+       </Pane>
+   </right>
+   <bottom>
+       <Label fx:id="punktestandLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="Punkte: 0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+           <font>
+               <Font size="24.0" />
+           </font>
+           <BorderPane.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+           </BorderPane.margin>
+       </Label>
+   </bottom>
+   <top>
+        <Label fx:id="spielerNameLabel" alignment="CENTER" contentDisplay="CENTER" minHeight="50.0" minWidth="100.0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+   </top>
+</BorderPane>
